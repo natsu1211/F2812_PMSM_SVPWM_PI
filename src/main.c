@@ -700,11 +700,8 @@ void CAPINT3(void)
 }
 /*******************************************************************************
 名称：void Init_ADC(void)
-功能：AD初始化
-参数：void
-时间：2013.1.14
-版本：1.0
-注意：AD初始化 连续级联方式，最简单的方式
+功能：Analog/Digital Convert Initial
+Contiguous Concatenation, the simplest way
 *******************************************************************************/
 void Init_ADC(void)
 {
@@ -760,12 +757,9 @@ long PI_Controller(TPI * PI, long Geiding, long FeedBack,long * Result)
    *Result = Temp>>16;
 }
 /*******************************************************************************
-名称：void motor_init(void)
-功能：初始定位
-参数：无
-时间：2013.1.14
-版本：1.0
-注意：开环通不同US，测试霍尔信号得到
+Name：void motor_init(void)
+Function：Position Initial
+position initial using hall signal
 *******************************************************************************/
 void motor_init(void)
 {
@@ -784,12 +778,8 @@ void motor_init(void)
 
 }
 /*******************************************************************************
-名称：void RP_transformation()
-功能：初始定位
-参数：无
-时间：2013.1.14
-版本：1.0
-注意：
+Name：void RP_transformation()
+Function: Position Initial
 *******************************************************************************/
 void RP_transformation()
 {
