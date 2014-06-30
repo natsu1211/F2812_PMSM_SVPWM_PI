@@ -686,8 +686,8 @@ void init_ev(void)
     EvbRegs.T3CON.all=0x1340;    //8分频
 }
 /*******************************************************************************
-名称：void CAPINT3(void)
-功能：Capture Interrupt
+Name：void CAPINT3(void)
+Function：Capture Interrupt
 for error correction
 *******************************************************************************/
 void CAPINT3(void)
@@ -699,8 +699,8 @@ void CAPINT3(void)
     EINT;//开全局中断
 }
 /*******************************************************************************
-名称：void Init_ADC(void)
-功能：Analog/Digital Convert Initial
+Name：void Init_ADC(void)
+Function：Analog/Digital Convert Initial
 Contiguous Concatenation, the simplest way
 *******************************************************************************/
 void Init_ADC(void)

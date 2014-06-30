@@ -13,16 +13,7 @@
 #define Readdat       GpioDataRegs.GPDDAT.bit.GPIOD6
 #define Setdathigh    GpioDataRegs.GPDSET.bit.GPIOD6=1
 #define Setdatlow     GpioDataRegs.GPDCLEAR.bit.GPIOD6=1
-/***************************************************
-底层硬件函数，用于被接口函数调用，该函数集只在本程序内使用
-底层硬件函数共有如下几个函数：
-1. 初始化函数   	BC7281Init
-2. 延时函数uS		BC7281Delay
-3. 写入BC7281命令	BC7281Write
-4. 向BC7281传送一个字节  BC7281SendByte
-***************************************************
-*/
-//可能被调用函数声明
+
 
 void BC7281SendByte(unsigned char);
 void Delay(unsigned char);
@@ -45,7 +36,7 @@ void BC7281Init(void)
     Setclkhigh;
 	//ClearLedDisplay();
 	//Delay(1000);
-    BC7281Write(0x12,0x80);// 初始化BC728x为164模式不反相
+    BC7281Write(0x12,0x80);// Initial BC728x to 164Mode
     BC7281Write(0x10,0xFF);
     BC7281Write(0x15,0x10);
 	BC7281Write(0x15,0x00);
