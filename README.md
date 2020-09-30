@@ -1,5 +1,5 @@
-F2812_PMSM_SVPWM_PI
-===================
+F2812_PMSM_SVPWM_PI_BY_PROGRAM
+==============================
 
 This is a C language implementation of Space Vector Pulse Width Modulation(SVPWM) with speed, position and current PI controller for Permanent Magnet Synchronous Motor(PMSM).
 By this program, we can control the speed and position of PMSM accurately, which is suitable for industrial control.
@@ -10,7 +10,7 @@ However, if you pay attention to the hardware dependant codes (especially the co
 main.c                                          
 Program entry. Almost all logic is implemented in this file, including SVPWM and PI.
 
-display.c                                     
+display.c
 LED driver program based on BC7281 driver chip. Using to display the speed of motor. 
 
 table.c                                                                 
